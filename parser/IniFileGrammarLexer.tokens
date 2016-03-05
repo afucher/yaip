@@ -1,0 +1,9 @@
+TEXT=1
+EQUALS=2
+LBRACK=3
+RBRACK=4
+LINE_COMMENT=5
+WS=6
+'='=2
+'['=3
+']'=4
