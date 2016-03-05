@@ -1,0 +1,25 @@
+{
+  "name": "yaip",
+  "version": "0.0.0",
+  "description": "A parser for ini file using ANTLR",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "antlr4": "^4.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**/*.js",
+    "buildParser": "java -jar antlr/antlr-4.5.2-complete.jar -o ./parser -Dlanguage=JavaScript parser/IniFileGrammar.g4",
+    "build:test": "npm run buildParser && npm run test"
+  },
+  "author": "Arthur Fücher",
+  "license": "ISC"
+}
