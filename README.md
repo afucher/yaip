@@ -1,6 +1,9 @@
+
 # Yes, another ini parser!
 
-An ANTLR parser for ini files
+An ANTLR parser for ini files  
+
+[![Build Status](https://travis-ci.org/afucher/yaip.svg?branch=master)](https://travis-ci.org/afucher/yaip)  
 
 ## Instalation
 ```js
