@@ -1,6 +1,6 @@
 {
   "name": "yaip",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A parser for ini file using ANTLR",
   "main": "index.js",
   "directories": {
