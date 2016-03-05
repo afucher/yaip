@@ -7,7 +7,7 @@ describe("A Listener walking the tree", function() {
   var BasicIniFileListener= require("../../listeners/BasicIniFileListener");
   var listener = new BasicIniFileListener.BasicIniFileListener();
   var parser = require('../../parser')
-  parser.init(input);
+  parser.parse(input);
   it("should call 'enterKey' once", function() {
     var spy = sinon.spy(listener, "enterKey");
     parser.walk(listener);

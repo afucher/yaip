@@ -15,7 +15,7 @@ describe("A Json generator", function() {
   it("should return a simple object", function() {
     var input = "[section1]\nkey=value\n";
     var parser = require('../../parser')
-    parser.init(input);
+    parser.parse(input);
     parser.walk(listener);
     var result = listener.getResult();
     expect(result).to.have.property('section1');
