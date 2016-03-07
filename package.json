@@ -20,6 +20,13 @@
     "buildParser": "java -jar antlr/antlr-4.5.2-complete.jar -o ./parser -Dlanguage=JavaScript parser/IniFileGrammar.g4",
     "build:test": "npm run buildParser && npm run test"
   },
-  "author": "Arthur Fücher",
+  "author": {
+    "name": "Arthur Fücher",
+    "url": "http://github.com/afucher"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afucher/yaip.git"
+  },
   "license": "ISC"
 }
